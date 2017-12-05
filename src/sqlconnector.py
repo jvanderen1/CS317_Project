@@ -2,16 +2,16 @@ import MySQLdb
 from sshtunnel import SSHTunnelForwarder
 
 # ssh variables
-ssh_host = ('prclab.pr.erau.edu', 22)  # Port 22 is default for SSH . . .
-ssh_user = 'vanderj3'
-ssh_pass = 'Atitis00'
-remote_bind_addr = ('pruxap04.erau.edu', 3306)  # Port 3306 is for MySQL . . .
+ssh_host = None
+ssh_user = None
+ssh_pass = None
+remote_bind_addr = None
 
 # mysql variables
-mysql_host = '127.0.0.1'  # 'localhost' will not work for MySQL hostname . . .
-mysql_user = 'vanderenj'
-mysql_pass = 'Atitis00'
-database = 'G3_MovieTheater'
+mysql_host = None
+mysql_user = None
+mysql_pass = None
+database = None
 
 
 class SQLConnector(object):
